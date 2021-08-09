@@ -1,47 +1,53 @@
 variable "release_name" {
-    description = "Release Name"
+  type        = string
+  description = "Release Name"
 }
 
 variable "chart_repository" {
-    description = "Chart Repository"
+  type        = string
+  description = "Chart Repository"
 }
 
 variable "chart_name" {
-    description = "Chart Name"
+  type        = string
+  description = "Chart Name"
 }
 
 variable "chart_version" {
-    description = "Chart Version"
+  type        = string
+  description = "Chart Version"
 }
 
 variable "config_file_path" {
-    description = "Config File Path"
+  type        = string
+  description = "Config File Path"
 }
 
 variable "namespace" {
-    description = "Namespace"
+  type        = string
+  description = "Namespace"
 }
 
 variable "max_history" {
-    description = "Max History"
-    type = number
-    default = 10
+  type        = number
+  description = "Max History"
+  default     = 10
 }
 
 variable "lint_enabled" {
-    description = "Lint Enabled"
-    type = bool
-    default = true
+  type        = bool
+  description = "Lint Enabled"
+  default     = true
 }
 
 variable "atomic_enabled" {
-    description = "Atomic Enabled"
-    type = bool
-    default = true
+  type        = bool
+  description = "Atomic Enabled"
+  default     = true
 }
 
 variable "depends_resource_id" {
+  type        = any
   description = "Depends Resource ID"
-  type = any
-  default = ""
+  default     = ""
 }

@@ -1,4 +1,4 @@
 variable "namespaces" {
+  type        = map(map(string))
   description = "Namespaces"
-  type = map(map(string))
 }

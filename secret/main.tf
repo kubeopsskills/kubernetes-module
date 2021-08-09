@@ -1,8 +1,8 @@
 resource "kubernetes_secret" "secret" {
   metadata {
-    name = var.name
+    name      = var.name
     namespace = var.namespace
-    labels = var.labels
+    labels    = var.labels
   }
 
   data = var.data
